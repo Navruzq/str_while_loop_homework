@@ -6,4 +6,13 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    k=0
+    i=0
+    while i<len(s):
+       
+        if str(s[i]).isdigit():
+            if str(s[i])==1:
+              k+=int(s[i])
+        i+=1
+    return k  
+print(main('4444'))   
