@@ -11,8 +11,10 @@ def main(s):
     while i<len(s):
        
         if str(s[i]).isdigit():
-            if str(s[i])==1:
+            if int(s[i])%2==1:
               k+=int(s[i])
+            else:
+              k+=0
         i+=1
     return k  
-print(main('4444'))   
+print(main('3249'))   
