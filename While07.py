@@ -1,3 +1,6 @@
+from ast import While
+
+
 def main(s):
     """
     A string of numbers is given. Find how many even numbers there are and return.
@@ -6,4 +9,15 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    
+    k=0
+    i=0
+    while i<len(s):
+       
+        if str(s[i]).isdigit():
+              if int(s[i])%2==0:
+                k+=1
+        i+=1
+    return k  
+print(main('4444'))      
+                 
